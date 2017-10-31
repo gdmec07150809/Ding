@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0px" android:layout_height="0px"/>
+    <RelativeLayout
+        android:id="@+id/up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000">
+        <ImageView
+            android:id="@+id/settings_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bk"/>
+        <TextView
+            android:id="@+id/fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/settings_back"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:text="返回"/>
+        <TextView
+            android:id="@+id/add_machine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="新设备标签格式"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/come"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+
+
+            <RadioGroup
+                android:id="@+id/group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/button1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dip"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="30dip"
+                    android:text="GPRS:"
+                    android:textSize="14dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/button2"
+                    android:checked="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dip"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="30dip"
+                    android:text="WIFI："
+                    android:textSize="14dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/button3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dip"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="30dip"
+                    android:text="Bluetooth："
+                    android:textSize="14dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/button4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dip"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="30dip"
+                    android:text="Rfid(需要NFC功能)："
+                    android:textSize="14dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/button5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dip"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="30dip"
+                    android:text="ZigBee(需要ZigBee助手)："
+                    android:textSize="14dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/button6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dip"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="30dip"
+                    android:text="二维码/条形码："
+                    android:textSize="14dip" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
